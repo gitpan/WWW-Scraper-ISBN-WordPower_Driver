@@ -1,6 +1,6 @@
 {
     "name": "WWW-Scraper-ISBN-WordPower_Driver",
-    "version": "0.06",
+    "version": "0.07",
     "abstract": "Search driver for Word Power online book catalog",
     "author": ["Barbie <barbie@cpan.org>"],
 
@@ -22,12 +22,13 @@
         "runtime" : {
             "requires" : {
                 "WWW::Mechanize": "1.60",
-                "WWW::Scraper::ISBN": "0.25",
-                "WWW::Scraper::ISBN::Driver": "0.18"
+                "WWW::Scraper::ISBN": "1.00",
+                "WWW::Scraper::ISBN::Driver": "1.00"
             }
         },
         "test" : {
             "requires": {
+                "Data::Dumper": "0",
                 "IO::File": "0",
                 "Test::More": "0.70"
             },
@@ -43,7 +44,7 @@
     "provides": {
         "WWW::Scraper::ISBN::WordPower_Driver": {
             "file": "lib/WWW/Scraper/ISBN/WordPower_Driver.pm",
-            "version": "0.06"
+            "version": "0.07"
         }
     },
     "no_index": {
@@ -52,6 +53,11 @@
 
     "resources": {
         "license": "http://www.perlfoundation.org/artistic_license_2_0",
-        "bugtracker": { "web": "http://rt.cpan.org/Public/Dist/Display.html?Name=WWW-Scraper-ISBN-WordPower_Driver" }
+        "bugtracker": { "web": "http://rt.cpan.org/Public/Dist/Display.html?Name=WWW-Scraper-ISBN-WordPower_Driver" },
+        "repository": {
+            "url": "git://github.com/barbie/www-scraper-isbn-wordpower_driver.git",
+            "web": "http://github.com/barbie/www-scraper-isbn-wordpower_driver",
+            "type": "git"
+        }
     }
 }
